@@ -1,0 +1,353 @@
+body {
+        background-image: url('https://uswalldecor.com/cdn/shop/files/RMK12279M.jpg?v=1695064926');
+        background-size: cover;
+        background-position: fixed;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+}
+#name {
+        color: black;
+        text-align: center;
+        font-family: 'Harry P', sans-serif ;
+        margin-top: -20px;
+        text-shadow: 2px 2px 8ch #000;
+        font-size: 150px;
+        animation: flicker 2s infinite;
+}
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+}
+#btn {
+  background-color: linear-gradient(to right, #f5e79e, #d6b66a);
+  color: white;
+  padding: 10px 15px;
+  border: 2px solid black;
+  border-radius: 6px;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #3e2f1c;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;                           /* Changed to fixed positioning */
+  top: 300px;                               /* Position from top of viewport */
+  right: 650px;                             /* Position from right of viewport */
+  z-index: 1001;                            /* High z-index to stay on top */
+}
+
+#factDisplay {
+  position: absolute;                           /* Changed to fixed positioning */
+  top: 350px;                               /* Position from top of viewport */
+  right: 800px;                             /* Position from right of viewport */
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: san;
+  color: black;
+  max-width: 200px;
+  z-index: 1001;
+  white-space: nowrap;                       /* Prevents text from wrapping to new lines */                         /* Hides any text that goes beyond the container */
+                               /* Ensure it stays on top */                       /* Keep relative positioning */
+}
+#Welcome {
+    font-family: 'Harry P', sans-serif;
+    font-size: 30px;
+}
+
+#image {
+    text-align: center;
+    border-radius: 40%;
+
+}
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    padding-top: 60px;
+}
+#container {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+#navbar a {
+    margin: 0 15px;
+    font-family: 'Harry P', sans-serif;
+    color: white;
+
+}
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#navbar li {
+    margin: 0 15px;
+}
+.stars {
+    cursor: pointer;
+    font-size: 24px;
+    color: lightgray;
+    margin-top: 30%;
+    margin-bottom: 15%;
+    position: relative;
+    z-index: 2;
+}
+.star.selected {
+    color: gold;
+}
+.comment-input {
+    width: 100%;
+    height: 80px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 22%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative;
+    z-index: 2;
+}
+#commentInput {
+    background-color: rgba(142, 127, 127, 0.6);
+    color: white;
+    width: 300px;
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 20px;
+    font-size: 1rem;
+    border: 2px solid #d6b66a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #d6b66a;
+    resize: none;
+    transition: border 0.3s, box-shadow 0.3s;
+    margin-top: -50%;
+    width: 250px;
+
+  }
+
+  #commentInput:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.4);
+  }
+  #button {
+    margin-top: 0.6rem;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5;
+    background: #d6b66a;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: -5px;
+    font-family: inherit;
+    font-weight: bold;
+  }
+
+  #button:hover {
+    background: #357ab8;
+  }
+.rating-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* or center, as you like */
+  margin-top: -10%;
+  gap: 10px;
+
+  }
+.section {
+    
+background-color: rgba(0, 0, 0, 0.6); /* soft dark overlay */
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #d6b66a;
+  max-width: 700px;
+  margin: 0px ;
+  margin-top: 20px;
+  font-family: 'Georgia', serif;
+  color: #f5f5f5;
+  line-height: 1.6;
+  box-shadow: 0 0 30px rgba(214, 182, 106, 0.6);
+}
+
+
+.card-row {
+    display: flex;
+    justify-content: start; /* or space-between, center, etc. */
+    gap: 20px; /* space between cards */
+    padding: 20px;
+    
+  }
+  
+  .profile-card {
+    width: 270px;
+    background-color: #fdf6e3;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #000000;
+  }
+  
+  .profile-img {
+    width: 110px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #a52a2a;
+    margin-bottom: 10px;
+  }
+  
+  .profile-card h2 {
+    margin: 10px 0 5px;
+    font-family: 'Harry P', sans-serif;
+    font-size: 20px;
+  }
+  
+  .profile-card p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .house-badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #d62828;
+    color: #fff;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+  .characters-bg {
+    background-image: url('https://orlandoinformer.com/wp-content/uploads/2013/05/The-Wizarding-World-of-Harry-Potter-Diagon-Alley-Rendering-tight-oi.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #222; /* fallback color */
+}
+
+.comment {
+    background-color: #f5e6c8;   /* Light tan background */
+    border-radius: 12px;         /* Rounded corners */
+    padding: 12px 18px;          /* Space inside the comment */
+    margin: 12px 0;              /* Space between comments */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10); /* Subtle shadow */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: #333;
+    max-width: 350px;
+    word-break: break-word;
+    transition: background 0.3s;
+}
+
+.comment:hover {
+    background-color: #ffeabf;   /* Slightly lighter on hover */
+}
+#commentsContainer {
+    margin-top: 30px;
+}
+
+.new-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 110px 20px 20px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 600px;
+    top: 20%;                                 /* Added missing semicolon */
+    width: 40%;
+    position: relative;
+}
+
+
+.close-button:hover {
+  color: #a00;
+}
+
+
+/* Flying Dragon Animation */
+.dragon {
+    position: fixed;
+    font-size: 30px;
+    z-index: 999;
+    animation: fly 15s infinite linear;
+    pointer-events: none; /* So it doesn't interfere with clicks */
+}
+
+@keyframes fly {
+    0% {
+        top: 10%;
+        left: -50px;
+        transform: rotate(0deg);
+    }
+    25% {
+        top: 20%;
+        left: 25%;
+        transform: rotate(15deg);
+    }
+    50% {
+        top: 60%;
+        left: 50%;
+        transform: rotate(-10deg);
+    }
+    75% {
+        top: 30%;
+        left: 75%;
+        transform: rotate(20deg);
+    }
+    100% {
+        top: 10%;
+        left: 100%;
+        transform: rotate(0deg);
+    }
+}
+
+/* Add multiple dragons with different timing */
+.dragon:nth-child(2) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+.dragon:nth-child(3) {
+    animation-delay: -10s;
+    animation-duration: 25s;
+}
+

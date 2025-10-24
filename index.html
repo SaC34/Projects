@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.cdnfonts.com/css/harry-p" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="main">
+
+    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.harrypotter.com/fact-file/characters-and-pets/harry-potter">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Characters.html">Characters</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://deadline.com/gallery/harry-potter-movies-in-chronological-order/harry-potter-and-the-chamber-of-secrets-tom-felton-daniel-radcliffe-2002-c-warner-brothers-cou/">Movies</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h2 id="Welcome">Welcome to the Harry Potter Fan Page!</h2>
+      <h1 id="name">Harry Potter</h1>
+      <div id="container">
+        <button id="btn">Random Fact!</button>
+        <div id="factDisplay"></div>
+
+
+      </div>
+      
+      <div class="section" id="facts-section"> 
+         The Harry Potter series, written by J.K. Rowling, traces the coming-of-age journey of Harry Potter, <br>
+         a boy who learns on his eleventh birthday that he is a wizard. He enrolls at Hogwarts School of 
+         Witchcraft and Wizardry, where he not only studies magic but alsouncovers the truth behind his parents’ 
+         murder at the hands of the dark wizard Lord Voldemort. As the narrative unfolds over seven books, Harry 
+         grapples with identity, loss, and moral complexity while facing Voldemort’s growing threat. 
+         The series weaves together themes of friendship, sacrifice, and the enduring conflict between good and 
+         evil, set against the backdrop of a richly imagined magical world. 
+      </div>
+      
+      <div class="new-section">
+        <h2></h2>
+        <div class="rating-entry">
+          <div class="stars" data-item-id="123">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+          </div>
+          <textarea id="commentInput" placeholder="Thoughts on Harry Potter?"></textarea>
+          <button id="button" onclick="addComment()">Add Comment</button>
+          <div id="commentsContainer"></div>
+          
+        </div>
+      </div>
+  </body>
+        <script>
+          const facts = [
+            "Harry Potter is a wizard who attends Hogwarts School of Witchcraft and Wizardry.",
+            "After graduating Hogwarts, Ginny Weasley went on to play for the Holyhead Harpies.",
+            "Harry Potter is the main character in the Harry Potter series.",
+            "Harry Potter is a wizard who attends Hogwarts School of Witchcraft and Wizardry.",
+            "Harry Potter is a wizard who attends Hogwarts School of Witchcraft and Wizardry.",
+          ];
+
+  
+          document.getElementById('btn').onclick = function() {
+            const randomFact = facts[Math.floor(Math.random() * facts.length)];
+            document.getElementById('factDisplay').textContent = randomFact;
+          };
+        </script>
+        <script src="script.js"></script>
+     
+
+</html>
