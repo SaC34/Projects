@@ -1,0 +1,28 @@
+print("Hello, Gamer!")
+Name = input("What is your name?")
+Age = int(input("How old are you?"))
+if Age < 13:
+        print("You are not old enough to play this game.")
+else:
+    print("You are old enough to play this game.")
+    print("Welcome to the game," + Name + "! Look at the menu and remember the prices of the items.")
+    menu = {"Pizza": 10, "Chips": 3, "Soda": 2, "Water": 5}
+    cart = []
+    total = 0
+    
+    print("----- Menu -----")
+    for key, value in menu.items():
+        print(f"{key}: ${value}")
+        
+    while True:
+        food = input("Buy something!! Or press Q to quit: ").title()
+        if food == "Q":
+            break
+        elif menu.get(food) is not food in menu:
+                cart.append(food)
+    for food in cart:
+        total += menu.get(food)
+        print(f"You bought {food}")
+
+print()
+print(f"your total is: ${total:.2f}")  
