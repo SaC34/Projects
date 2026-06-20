@@ -1,2 +1,2 @@
-# Projects
-Projects I have worked on
+# Website Design
+This website was developed as part of the Break Through Tech program. The goal was to create a fully functional website from the ground up while gaining hands-on experience with front-end development. Throughout the project, I applied HTML, CSS, and JavaScript to design responsive layouts, enhance user experience, and implement interactive features. This project strengthened my skills in web development, problem-solving, and creating accessible digital experiences.
